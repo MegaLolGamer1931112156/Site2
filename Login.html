@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Новинки компьютерных устройств</title>
+    <style>
+      *{
+        border: 1px solid rgb(255, 255, 255);
+      }
+      .navbar, .logo, .call-button{
+        display: inline-block;
+
+      }
+      .navbar__item{
+        display: inline-block;
+
+      }
+      .logo{
+        float: left;
+        bottom: 500px;
+        margin-left: 190px;
+        margin-top: 85px;
+      }
+      .navbar{
+        float: center;
+        margin-left: 150px;
+        margin-top: 55px;
+        font-size: 25px;
+        
+      }
+      .call-button{
+        float: right;
+        top: 150px;
+        display: flex;
+        margin-top: 80px;
+        margin-right: 150px;
+
+
+        background: #c8c8c8; /* Цвет фона */
+        color: rgb(255, 0, 0); /* Цвет текста */
+        padding-top: 50px; /* Поля вокруг текста */
+        padding-bottom: 50px;
+        padding-right: 100px;
+        padding-left: 100px;
+        border-radius: 15px; /* Уголки */
+        border: 1px solid black;
+
+      }
+      .bg{
+        position: fixed;
+        opacity: 0.5;
+        display: block;
+        z-index: -9999;
+        width: 1920px;
+        height: 1080px;
+      }
+      
+      .navbar__item{
+        padding: 40px;
+      }
+      .main{
+        display: inline;
+      }
+      .left-side{
+        float: left;
+        margin-top: 290px;
+        margin-left: 180px;
+        
+      }
+      .image-list{
+        margin-top: 5px;
+      }
+      .image-list__item{
+        display: inline-block;
+        float: right;
+        margin-left: 290px;
+      }
+      .image{
+        width: 180%;
+        height: 85%;
+      }
+      #f1{
+        display: flex;
+        margin-left: 430px;
+        margin-bottom: 40px;
+      }
+
+      .right-side{
+        margin-top: 100px;
+        margin-left: 300px;
+      }
+
+      .title{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+      }
+
+
+
+      #form{
+        background: #c8c8c8; /* Цвет фона */
+        color: rgb(255, 0, 0); /* Цвет текста */
+        padding-top: 50px; /* Поля вокруг текста */
+        padding-bottom: 50px;
+        padding-right: 100px;
+        padding-left: 100px;
+        border-radius: 15px; /* Уголки */
+        border: 1px solid black;
+      }
+
+
+
+
+
+
+
+
+
+
+      body {font-family: Arial, Helvetica, sans-serif;}
+
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(181, 100, 100);
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 47%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: 50%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  margin: 5px;
+  margin-left: 350px;
+
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 25%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  padding-top: 16px;
+}
+
+
+
+
+form{
+  margin-left: 500px;
+  margin-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <img src="Пример прототипа2.jpg" alt="logo" class="bg" />
+    <header class="header">
+      <img src="./icons/icon.svg" alt="logo" width="100px" height="100px" class="logo" />
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="#">Жесткие диски</a></li>
+          <li class="navbar__item">
+            <a href="#">Процессоры</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">Видеокарты</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">Мониторы</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="tel:+79999999999" class="call-button">Позвонить</a>
+    </header>
+
+    <main class="main">
+      <form method="post">
+        <div class="qwe">
+          <div class="imgcontainer">
+            <h1>LOGIN</h1>
+          </div>
+        
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+          </br>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+                
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

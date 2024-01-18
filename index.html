@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Новинки компьютерных устройств</title>
+    <style>
+      *{
+        border: 1px solid rgb(255, 255, 255);
+      }
+      .navbar, .logo, .call-button{
+        display: inline-block;
+
+      }
+      .navbar__item{
+        display: inline-block;
+
+      }
+      .logo{
+        float: left;
+        bottom: 500px;
+        margin-left: 190px;
+        margin-top: 85px;
+      }
+      .navbar{
+        float: center;
+        margin-left: 150px;
+        margin-top: 55px;
+        font-size: 25px;
+        
+      }
+      .call-button{
+        float: right;
+        top: 150px;
+        display: flex;
+        margin-top: 80px;
+        margin-right: 150px;
+
+
+        background: #c8c8c8; /* Цвет фона */
+        color: rgb(255, 0, 0); /* Цвет текста */
+        padding-top: 50px; /* Поля вокруг текста */
+        padding-bottom: 50px;
+        padding-right: 100px;
+        padding-left: 100px;
+        border-radius: 15px; /* Уголки */
+        border: 1px solid black;
+
+      }
+      .bg{
+        position: fixed;
+        opacity: 0.5;
+        display: block;
+        z-index: -9999;
+        width: 1920px;
+        height: 1080px;
+      }
+      
+      .navbar__item{
+        padding: 40px;
+      }
+      .main{
+        display: inline;
+      }
+      .left-side{
+        float: left;
+        margin-top: 290px;
+        margin-left: 180px;
+        
+      }
+      .image-list{
+        margin-top: 5px;
+      }
+      .image-list__item{
+        display: inline-block;
+        float: right;
+        margin-left: 290px;
+      }
+      .image{
+        width: 180%;
+        height: 85%;
+      }
+      #f1{
+        display: flex;
+        margin-left: 430px;
+        margin-bottom: 40px;
+      }
+
+      .right-side{
+        margin-top: 100px;
+        margin-left: 300px;
+      }
+
+      .title{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+      }
+
+    </style>
+  </head>
+  <body>
+    <img src="Пример прототипа2.jpg" alt="logo" class="bg" />
+    <header class="header">
+      <img src="./icons/icon.svg" alt="logo" width="100px" height="100px" class="logo" />
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="#">Жесткие диски</a></li>
+          <li class="navbar__item">
+            <a href="#">Процессоры</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">Видеокарты</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">Мониторы</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="Login.html" class="call-button">Войти</a>
+    </header>
+
+    <main class="main">
+      <div class="left-side">
+        <h1 class="title">Новости о компьютерных устройствах</h1>
+      </div>
+      <div class="right-side">
+        <ul class="image-list">
+          <div id="f1">
+          <li class="image-list__item">
+            <img src="./images/images.jpg" alt="image" class="image" />
+          </li>
+          <li class="image-list__item">
+            <img src="./images/images.jpg" alt="image" class="image" />
+          </li>
+          </div>
+          <div id="f1">
+          <li class="image-list__item">
+            <img src="./images/images.jpg" alt="image" class="image" />
+          </li>
+          <li class="image-list__item">
+            <img src="./images/images.jpg" alt="image" class="image" />
+          </li>
+        </div>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
